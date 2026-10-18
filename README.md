@@ -41,7 +41,10 @@ The network is divided into four VLANs:
 
 The Layer 3 switch handles inter-VLAN routing, while the edge router connects the internal network to a simulated ISP environment.
 
-Trunk links carry traffic for multiple VLANs between network devices. ACLs enforce restrictions on selected inter-VLAN traffic.
+Trunk links carry traffic for multiple VLANs between network devices. ACLs enforce restrictions on selected inter-VLAN traffic. 
+## 🌐 Network Topology
+
+![Enterprise Network Topology](01-network-topology.png)
 
 ## ⚙️ Implementation
 
