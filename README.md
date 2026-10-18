@@ -49,25 +49,29 @@ Trunk links carry traffic for multiple VLANs between network devices. ACLs enfor
 ## ⚙️ Implementation
 
 ### 1. VLAN Segmentation
-Created separate VLANs for Management, Users, Servers, and Security to logically isolate network resources.
+Created separate VLANs for Management, Users, Servers, and Security to logically isolate network resources. 
+![Enterprise Network Topology](02-vlan-configuration.png)
 
 ### 2. Switching and Trunking
 Configured switch access ports and trunk links to support communication across the VLAN infrastructure.
+![Enterprise Network Topology](02-vlan-configuration.png)
 
 ### 3. Inter-VLAN Routing
 Configured Switch Virtual Interfaces (SVIs) on the Layer 3 switch to route traffic between VLANs.
+![Enterprise Network Topology](03-multilayer-routing.png)
 
-### 4. DHCP and DNS
-Configured network services for IP address allocation and name resolution.
 
-### 5. Static Routing and ISP Simulation
+### 4. Static Routing and ISP Simulation
 Configured static routes and an edge router to establish connectivity with a simulated external network.
+![Enterprise Network Topology](04-edge-routing.png)
 
-### 6. NAT/PAT
+### 5. NAT/PAT
 Implemented address translation to support outbound connectivity from the internal network to the simulated external environment.
+![Enterprise Network Topology](05-nat-pat-testing.png)
 
-### 7. ACL-Based Security
+### 6. ACL-Based Security
 Applied access control rules to restrict selected traffic between VLANs and demonstrate network segmentation.
+![Enterprise Network Topology](06-acl-verification.png)
 
 ## 🧪 Testing & Validation
 
